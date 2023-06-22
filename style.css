@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+main{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #333;
+    background-color: #f4f4f4
+}
+
+.clock{
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    border: 2px solid #333;
+    border-radius: 50%;
+    margin-bottom: 4vh;   
+}
+
+.clock .miliseconds{
+    font-size: 1.4rem;
+    margin-left: 4px;
+}
+
+.btnclock{
+    width: 300px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+
+.btnclock button{
+    padding: 4px 8px;
+    font-size: 1.3rem;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.btnclock button:hover{
+    transform: scale(1.1);
+}
+
+.btnclock .btn_stop{
+    background-color: #e85f5c;
+}
+
+.btnclock .btn_start{
+    background-color: #4db66c;
+}
+
+.btnclock .btn_clear{
+    background-color: #0190dc;
+}
+
+.box-timer{
+    width: 340px;
+    height: 120px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.timer-record{
+    width: 100%;
+    text-align: center;
+}
+
+.timer-record tr{
+    width: 100%; 
+    height: 20px;
+    
+}
+
+.timer-record tr td{
+    height: 28px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+footer{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+footer div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+footer div img{
+    width: 32px;
+    opacity: 0.7;
+    transition: .3s;
+}
+
+footer div img:hover{
+    width: 32px;
+    opacity: 1;
+}
